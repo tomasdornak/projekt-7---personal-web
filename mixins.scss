@@ -1,0 +1,60 @@
+// TEXT STYLES //
+
+@mixin textStyle1 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+@mixin textStyle2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+}
+
+@mixin heading {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+@mixin paragraph {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+}
+
+
+// BUTTONS // 
+
+@mixin main-button {
+    height: 60px;
+    width: 170px;
+    border-radius: 100px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: $main-color;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+@mixin second-button {
+    height: 60px;
+    width: 170px;
+    border-radius: 100px;
+    border: 2px solid $main-color;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+

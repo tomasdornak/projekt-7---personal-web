@@ -7,18 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Tomáš Dorňák - Startup Framework</title>
 </head>
 
 <body>
+
+<!-- HEADER -->
+
     <div class="navbar">
         <div class="logo-container">
             <h1 class="logo-text">Tomáš Dorňák</h1>
         </div>
-
-        <!-- Hamburger Menu Icon -->
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-
         <div class="links-container">
             <ul id="menu-links">
                 <li><a href="#features">Features</a></li>
@@ -29,15 +29,106 @@
         </div>
     </div>
 
+<!-- MAIN CONTENT -->
+
     <div class="main-content">
         <div class="wrapper">
             <h1 class="main-text">Startup<br>Framework. Suit<br>Up Your Startup</h1>
         </div>
-        <p class="main-paragraph">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily</p>
+        <p class="main-paragraph">We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.</p>
         <button class="main-button">Get Started</button>
         <button class="second-button">Learn More</button>
     </div>
 
-    <script src="script.js"></script>
+<!-- TRANSITION -->
+
+    <div class="transition1"></div>
+    
+<!-- WORK CONTENT -->
+
+<div class="work-content">
+    <h1 class="secondary-text">Recent Work</h1>
+    <div class="images-container">
+        <img class="work-image" src="images/work1.png" alt="Work Image 1">
+        <img class="work-image" src="images/work1.png" alt="Work Image 2">
+        <img class="work-image" src="images/work1.png" alt="Work Image 3">
+        <img class="work-image" src="images/work1.png" alt="Work Image 4">
+        <img class="work-image" src="images/work1.png" alt="Work Image 5">
+        <img class="work-image" src="images/work1.png" alt="Work Image 6">
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+</div>
+
+<!-- REF CONTENT -->
+
+    <div class="ref-content">
+        <h1 class="heading">Reference</h1>
+
+<!-- SLIDESHOW -->
+
+    <div class="reviews-container">
+
+<!-- SLIDES -->
+
+    <div class="reviews">
+      <p class="second-paragraph">"But man is not made for defeat. A man can be destroyed but not defeated."</p>
+      <div class="rating-container">
+      <img class="stars" src="images/stars.png">
+    </div>
+      <img class="klient1" src="images/klient1.jpg">
+      <p class="klient">Klient 1</p>
+    </div>
+  
+    <div class="reviews">
+      <p class="second-paragraph">"But man is not made for defeat. A man can be destroyed but not defeated."</p>
+      <div class="rating-container">
+        <img class="stars" src="images/stars.png">
+        </div>
+      <img class="klient1" src="images/klient1.jpg">
+      <p class="klient">Klient 2</p>
+    </div>
+  
+    <div class="reviews">
+        <p class="second-paragraph">"But man is not made for defeat. A man can be destroyed but not defeated."</p>
+        <div class="rating-container">
+            <img class="stars" src="images/stars.png">
+        </div>
+        <img class="klient1" src="images/klient1.jpg">
+      <p class="klient">Klient 3</p>
+    </div>
+  
+
+
+
+<!-- FOOTER -->
+
+    <div class="footer">
+        <h1 class="footer-text">Tomáš Dorňák</h1>
+        <div class="links-container">
+            <h1 class="links-text"> Link 1</h1>
+            <h1 class="links-text"> Link 1</h1>
+            <h1 class="links-text"> Link 1</h1>
+            <h1 class="links-text"> Link 1</h1>
+        </div>
+
+<!-- FB AND IG ICONS -->
+
+    <div class="icons-container">
+        <a href="#" target="_blank">
+            <img class="facebook" src="images/facebook.png" alt="Facebook">
+        </a>
+        <a href="#" target="_blank">
+            <img class="instagram" src="images/instagram.png" alt="Instagram">
+        </a>
+    </div>
+    </div>
+
+
+    <script src="script.js" defer></script>
 </body>
 </html>

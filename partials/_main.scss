@@ -1,0 +1,76 @@
+// MAIN TEXT //
+
+.main-text {
+    @include heading;
+    padding-left: 208px;
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: transparent; 
+    background: linear-gradient(90deg, #a7d3e0, #ffffff, #d5b1ff, #ff6ec4); 
+    background-size: 300% 300%; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    display: inline-block;
+    margin: 0;
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+// MAIN TEXT //
+
+
+// PARAGRAPH //
+
+.main-paragraph {
+    @include paragraph;
+    padding-left: 210px;
+    padding-right: 613px;
+    color: white;
+    margin-top: 15px;
+}
+
+// PARAGRAPH //
+
+
+// BUTTONS //
+
+.main-button {
+    @include main-button;
+    margin-left: 208px;
+    margin-top: 25px;
+}
+
+.main-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 8px 30px $main-color;
+}
+
+.second-button {
+    @include second-button;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.second-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 30px $main-color;
+}
+
+// BUTTONS //
+
+
+// CONTENT //
+
+.main-content {
+    width: 100%;
+    height: 88vh;
+}
+
+// CONTENT //
+
