@@ -8,6 +8,10 @@
     flex-direction: column;  
     align-items: center;  
     justify-content: flex-start;  
+
+    @media only screen and (min-width: $screen-xs) and (max-width: $screen-m) {
+       height: 75vh;
+        }
 }
 
 // CONTENT //
@@ -21,6 +25,7 @@
     justify-content: center; 
     gap: 20px;
     padding-top: 40px;
+
 }
 
 .work-image {
@@ -31,6 +36,16 @@
     padding-top: 10px;
     justify-content: center;
     transition: transform 0.3s ease; 
+
+    @media only screen and (min-width: $screen-xs) and (max-width: $screen-m) {
+        height: 99px !important;
+        width: auto;
+        }
+
+        @media only screen and (min-width: $screen-m) and (max-width: $screen-xl) {
+        height: 150px !important;
+        width: auto;
+        }
 
     &:hover {
         filter: brightness(0.8);  
@@ -54,6 +69,14 @@
     color: white;
     text-align: center;
     margin: 0 0 0 0;
+
+    @media only screen and (max-width: $screen-m) {
+    font-size: 44px;
+    }
+
+    @media only screen and (min-width: $screen-m) and (max-width: $screen-xl) {
+    font-size: 62px;
+    }
 }
 
 // HEADING //
