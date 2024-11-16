@@ -38,6 +38,10 @@
     width: 30%;
     text-align: center;
     flex-direction: column;
+
+    @media only screen and (max-width: $screen-m) {
+    width: 25%;
+    }
  }
 
  .stars {
@@ -61,11 +65,7 @@
     color: white;
 
     @media only screen and (max-width: $screen-m) {
-      font-size: 20px;
-
-    @media only screen and (min-width: $screen-m) and (max-width: $screen-xl) {
-      font-size: 15px;
-      }  
+      font-size: 17px;
   }
   }
 
@@ -78,7 +78,7 @@
     color: white;
 
     @media only screen and (max-width: $screen-m) {
-    font-size: 20px;
+    font-size: 17px;
   }
   }
 
@@ -89,13 +89,9 @@
     border-radius: 70%;
 
     @media only screen and (max-width: $screen-m) {
-      height: 65px;
+      height: 50px;
   }
   }
 
-  .rating-container {
-    @media only screen and (max-width: $screen-m) {
-      justify-content: center;
-      align-items: center;
-  }
-  }
+
+  

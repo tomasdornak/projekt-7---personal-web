@@ -74,6 +74,9 @@
         margin-left: 5%;
         margin-top: 10px;
         margin-right: 2px;
+        width: 140px;
+        height: 55px;
+        font-size: 20px;
     }
 
     @media only screen and (min-width: $screen-m) and (max-width: $screen-xl) {
@@ -89,10 +92,14 @@
 .second-button {
     @include second-button;
     margin-top: 10px;
+    margin-left: 5px;
 
     @media only screen and (max-width: $screen-m) {
         margin: 0 0 0 0;
-        margin-left: 2px;
+        margin-left: 5px;
+        width: 140px;
+        height: 55px;
+        font-size: 20px;
     }
 }
 
@@ -111,7 +118,6 @@
     @media only screen and (max-width: $screen-m) {
         justify-content: center;
         align-items: center;
-        height: 82vh;
     }
 }
 
