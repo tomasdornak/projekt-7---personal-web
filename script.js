@@ -1,10 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const hamburger = document.querySelector('.hamburger');
-    const linksContainer = document.querySelector('.links-container');
+const hamburger = document.getElementById('hamburger-menu');
+const navbar = document.querySelector('.navbar');
 
-    hamburger.addEventListener('click', function() {
-        linksContainer.style.display = linksContainer.style.display === 'flex' ? 'none' : 'flex';
-    });
+hamburger.addEventListener('click', () => {
+    navbar.classList.toggle('active'); 
 });
 
 
