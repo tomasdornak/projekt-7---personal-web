@@ -14,16 +14,18 @@
 
 <!-- HEADER -->
 
+<section id="home">
+
     <div class="navbar">
         <div class="logo-container">
-            <h1 class="logo-text">Tomáš Dorňák</h1>
+           <img class="logo-image" onclick="location.href='#home'" src="images/logooo.png">
         </div>
         <div class="links-container">
             <ul id="menu-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Recent Work</a></li>
+                <li><a href="#reference">Reference</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
 
@@ -37,20 +39,70 @@
 
 <!-- MAIN CONTENT -->
 
+
     <div class="main-content">
         <div class="wrapper">
             <h1 class="main-text">Startup<br>Framework. Suit<br>Up Your Startup</h1>
         </div>
         <p class="main-paragraph">We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.</p>
-        <button class="main-button">Get Started</button>
-        <button class="second-button">Learn More</button>
+        <button class="main-button" onclick="location.href='#work'">My Work</button>
+        <button class="second-button" onclick="location.href='#contact'">Contact</button>
     </div>
 
-<!-- TRANSITION -->
+</section>
 
-    <div class="transition1"></div>
+
+
+<!-- ABOUT CONTENT -->
+
+<section id="about">
+
+
+    <div class="about-content">
+
+
+
+    <div class="about-container">
+
+        <img class="about-image" src="images/me-image1.jpg">
+
+    </div>
+
+
+
+    <div class="paragraph-container">
+
+        <h1 class="about-heading">Hello, I'm <span class="highlight">Tomas</span></h1>
+               
+        <div class="about-container2">
+
+                <p class="about-paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde omnis, voluptates consequuntur dolor.
+                </p>
+
+                <p class="about-paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde omnis, voluptates consequuntur dolor.
+                </p>
+
+                <p class="about-paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde omnis, voluptates consequuntur dolor.
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="transition"></div>
     
 <!-- WORK CONTENT -->
+
+<section id="work">
 
 <div class="work-content">
     <h1 class="secondary-text">Recent Work</h1>
@@ -66,11 +118,14 @@
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
-        <div id="caption"></div>
     </div>
 </div>
 
+</section>
+
 <!-- REF CONTENT -->
+
+<section id="reference">
 
     <div class="ref-content">
         <h1 class="heading">Reference</h1>
@@ -106,6 +161,28 @@
     </div>
     </div>
     </div>
+
+</section>
+
+
+
+<!-- CONTACT CONTENT -->
+
+<section id="contact">
+
+<div class="contact-content">
+<h1 class="heading">Get In Touch</h1>
+
+<form>      
+    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+    <input type="submit" class="submit" value="SUBMIT"/>
+  </form>
+
+</div>
+
+</section>
   
 
 
@@ -113,12 +190,18 @@
 <!-- FOOTER -->
 
     <div class="footer">
-        <h1 class="footer-text">Tomáš Dorňák</h1>
+        <img class="logo-image" onclick="location.href='#home'" src="images/logooo.png">
+
+
+<!-- LINKS-->
+
         <div class="links-container">
-            <h1 class="links-text"> Link 1</h1>
-            <h1 class="links-text"> Link 1</h1>
-            <h1 class="links-text"> Link 1</h1>
-            <h1 class="links-text"> Link 1</h1>
+            <ul id="menu-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Recent Work</a></li>
+                <li><a href="#reference">Reference</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
 
 <!-- FB AND IG ICONS -->

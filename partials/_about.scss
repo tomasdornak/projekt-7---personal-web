@@ -1,0 +1,165 @@
+.about-content {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(180deg, #1a1b3e 0%, #000000 50%);
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 50px; 
+    display: flex; 
+}
+
+
+
+.about-paragraph {
+   @include paragraph;
+   margin: 0 0 0 0;
+   text-align: left;
+   width: 100%;
+
+   opacity: 0;
+   transform: translateY(50px); 
+   transition: opacity 1s ease, transform 1s ease;
+
+
+
+   @media only screen and (max-width: $screen-m) {
+    font-size: 20px;
+}
+
+}
+
+.about-paragraph.visible {
+  text-align: left;
+  opacity: 1; 
+  transform: translateY(0);
+
+  @media only screen and (max-width: $screen-m) {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+
+
+
+.about-row {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.about-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: opacity 1s ease, transform 1s ease;
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    filter: brightness(0.8) contrast(1.2);
+
+
+    @media only screen and (max-width: $screen-m) {
+      display: none;
+  }
+}
+
+
+.about-image.visible {
+opacity: 1; 
+transform: translateY(0);
+}
+
+.secondary-text {
+    background-color: black;
+}
+
+.paragraph-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: left !important;
+    height: 100%;
+    margin-top: 15px;
+    justify-content: center;
+    padding-bottom: 100px;
+
+    @media only screen and (max-width: $screen-m) {
+      text-align: center;
+      align-items: center;
+  }
+}
+
+.about-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  margin-left: 40px;
+
+  @media only screen and (max-width: $screen-m) {
+    display: none;
+}
+}
+
+
+.about-heading {
+  @include heading;
+  color: white;
+  margin: 0 0 0 0;
+  text-align: left !important;
+
+  opacity: 0;
+  transform: translateY(50px); 
+  transition: opacity 1s ease, transform 1s ease;
+
+
+  @media only screen and (max-width: $screen-m) {
+    font-size: 44px;
+    text-align: center;
+}
+
+  @media only screen and (min-width: $screen-m) and (max-width: $screen-xl) {
+    font-size: 62px;
+}
+
+}
+
+.about-heading.visible {
+  text-align: left !important;
+  opacity: 1; 
+  transform: translateY(0);
+}
+
+.about-container2 {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+
+
+  @media only screen and (max-width: $screen-m) {
+    gap: 20px;
+    margin-top: 25px;
+}
+}
+
+
+.highlight {
+  color: #a2c6e8;; 
+}
+
+
+
+
+.transition {
+  height: 52px;
+  background-color: black;
+}
+
+  
+
+

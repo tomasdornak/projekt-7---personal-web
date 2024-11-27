@@ -36,3 +36,40 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 });
+
+
+
+const texts = document.querySelectorAll('.heading, .about-heading, .secondary-text, .second-paragraph, .klient, .about-paragraph, .feedback-input, .submit');
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); 
+        }
+    });
+}, {
+    threshold: 0.5 
+});
+
+texts.forEach(text => observer.observe(text));
+
+  
+
+
+
+const images = document.querySelectorAll('.work-image, .about-image, .stars, .klient1');
+
+
+const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            imageObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.5 
+});
+
+images.forEach(image => imageObserver.observe(image));

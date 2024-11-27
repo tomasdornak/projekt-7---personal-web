@@ -7,13 +7,16 @@
     padding-bottom: 0;
     margin-bottom: 0;
     color: transparent; 
-    background: linear-gradient(90deg, #a7d3e0, #ffffff, #d5b1ff, #ff6ec4); 
+    background: linear-gradient(90deg, #a2c6e8, #d8c0ff);
     background-size: 300% 300%; 
     background-clip: text; 
     -webkit-background-clip: text; 
     display: inline-block;
     margin: 0;
-    animation: gradient-animation 5s ease infinite;
+    opacity: 0;
+    z-index: -999;
+    transform: translateY(50px);
+    animation: fadeIn 2s ease forwards, gradient-animation 5s ease infinite;
 
     @media only screen and (max-width: $screen-m) {
         font-size: 44px;
@@ -31,6 +34,12 @@
 }
 
 
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 @keyframes gradient-animation {
@@ -48,6 +57,10 @@
     padding-right: 613px;
     color: white;
     margin-top: 15px;
+    margin-bottom: 0px;
+    opacity: 0; 
+    transform: translateY(50px);
+    animation: fadeIn 3s ease forwards;
 
     @media only screen and (max-width: $screen-m) {
         font-size: 20px;
@@ -68,11 +81,15 @@
 .main-button {
     @include main-button;
     margin-left: 208px;
-    margin-top: 25px;
+    margin-top: 15px;
+
+    opacity: 0; 
+    transform: translateY(50px);
+    animation: fadeIn 3s ease forwards;
+
 
     @media only screen and (max-width: $screen-m) {
         margin-left: 5%;
-        margin-top: 10px;
         margin-right: 2px;
         width: 140px;
         height: 55px;
@@ -85,14 +102,17 @@
 }
 
 .main-button:hover {
-    transform: scale(1.1); 
     box-shadow: 0px 8px 30px $main-color;
 }
 
 .second-button {
     @include second-button;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 5px;
+
+    opacity: 0; 
+    transform: translateY(50px);
+    animation: fadeIn 3s ease forwards;
 
     @media only screen and (max-width: $screen-m) {
         margin: 0 0 0 0;
@@ -104,8 +124,18 @@
 }
 
 .second-button:hover {
-    transform: scale(1.1);
     box-shadow: 0px 8px 30px $main-color;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
 }
 
 
@@ -113,7 +143,10 @@
 
 .main-content {
     width: 100%;
-    height: 88vh;
+    height: 90vh;
+    background: linear-gradient(180deg, #000000 0%, #2d2e5e 25%, #1a1b3e 50%);
+    z-index: 10;
+
 
     @media only screen and (max-width: $screen-m) {
         justify-content: center;

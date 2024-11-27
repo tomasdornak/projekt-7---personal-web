@@ -6,32 +6,38 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
 
-  .footer-text {
-    @include textStyle1;
-    transition: transform 0.3s ease, font-size 0.3s ease;
-    cursor: pointer;
+    @media only screen and (max-width: $screen-m) {
+      justify-content: space-between;
   }
-
-  .footer-text:hover {
-    transform: scale(1.1); 
 }
-
-  .links-container {
-    display: flex;
-    gap: 60px;
-  } 
 
   .icons-container {
     display: flex;
     gap: 30px;
+
+    @media only screen and (max-width: $screen-m) {
+      gap: 15px;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      padding-right: 25px;
+  }
+}
+
+  .logo-image {
+    @media only screen and (max-width: $screen-m) {
+      padding-left: 25px;
+  }
+
   }
 
   .facebook, .instagram {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease, font-size 0.3s ease;
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
   }
 
   .instagram:hover {
@@ -40,20 +46,4 @@
 
   .facebook:hover {
     transform: scale(1.1); 
-  }
-
-  .links-text {
-    @include textStyle2;
-    color: white;
-    transition: transform 0.3s ease, font-size 0.3s ease;
-    cursor: pointer;
-  }
-
-  .links-text:hover {
-    transform: scale(1.1); 
-}
-
-
-  .footer .links-container {
-    display: none; 
   }
