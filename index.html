@@ -97,8 +97,6 @@
 
 </section>
 
-
-<div class="transition"></div>
     
 <!-- WORK CONTENT -->
 
@@ -170,19 +168,19 @@
 
 <section id="contact">
 
-<div class="contact-content">
-<h1 class="heading">Get In Touch</h1>
-
-<form>      
-    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-    <input name="email" type="text" class="feedback-input" placeholder="Email" />
-    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-    <input type="submit" class="submit" value="SUBMIT"/>
-  </form>
-
-</div>
-
-</section>
+    <div class="contact-content">
+      <h1 class="heading">Get In Touch</h1>
+  
+      <form action="process_form.php" method="POST">
+        <input name="name" type="text" class="feedback-input" placeholder="Name" required />
+        <input name="email" type="email" class="feedback-input" placeholder="Email" required />
+        <textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
+        <input type="submit" class="submit" value="SUBMIT"/>
+      </form>
+  
+    </div>
+  
+  </section>
   
 
 
@@ -207,10 +205,10 @@
 <!-- FB AND IG ICONS -->
 
     <div class="icons-container">
-        <a href="#" target="_blank">
+        <a href="https://www.facebook.com/tomasdornak22" target="_blank">
             <img class="facebook" src="images/facebook.png" alt="Facebook">
         </a>
-        <a href="#" target="_blank">
+        <a href="https://www.instagram.com" target="_blank">
             <img class="instagram" src="images/instagram.png" alt="Instagram">
         </a>
     </div>

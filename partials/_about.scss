@@ -90,6 +90,8 @@ transform: translateY(0);
     @media only screen and (max-width: $screen-m) {
       text-align: center;
       align-items: center;
+      margin-top: 0px;
+      padding-bottom: 0px;
   }
 }
 
